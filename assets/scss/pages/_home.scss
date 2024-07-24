@@ -1,0 +1,136 @@
+.banner-area {
+    background-image: url(../images/home/banner-bg.png);
+    background-size: cover;
+    background-position: center;
+
+    @media (max-width:991.98px) {
+        background-image: url(../images/home/banner-bg-m.png);
+    }
+
+    .banner-txt {
+        padding-top: 296px;
+        padding-bottom: 296px;
+        text-align: right;
+
+        @media (max-width:575.98px) {
+            padding-top: 114px;
+            padding-bottom: 114px;
+        }
+    }
+
+    .banner-title span {
+        @media (max-width:575.98px) {
+            font-size: 16px;
+        }
+    }
+}
+
+// .service-area
+.service-area {
+    @media (min-width: 576px) and (max-width: 991px) {
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+}
+
+.service-list {
+    .service-title {
+        color: $color-secondary;
+        margin-bottom: 8px;
+        text-align: center;
+
+        .service-icon {
+            display: inline-block;
+            font-size: 100px;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+
+        b {
+            display: block;
+            font-weight: bold;
+        }
+    }
+}
+
+
+// .product-type-area
+.product-type-area {
+    .product-type__list {
+        @media (min-width: 768px) and (max-width: 991px) {
+            padding-right: 216px;
+            padding-left: 216px;
+        }
+    }
+
+    .product-type__item {
+        @media (max-width: 767px) {
+            margin-bottom: 24px;
+        }
+    }
+}
+
+
+// .brand-product-area
+.brand-product-area {
+    background-image: url(../images/home/brand-product-bg.jpg);
+    background-size: cover;
+    background-position: center;
+
+    @media (min-width:768px) {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .brand-product__card {
+        margin-bottom: 24px;
+
+        @media (min-width: 992px) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    .brand-product__cover {
+        padding-top: 40%;
+    }
+
+    .brand-product__title {
+        background-color: #fff;
+        color: $color-primary;
+        padding: 8px 0;
+        text-align: center;
+        font-weight: 900;
+        font-style: italic;
+        font-family: "Roboto", sans-serif;
+    }
+}
+
+.feedback-content {
+    box-shadow: 0px 2px 6px #00000029;
+    border: 1px solid #DEE2E6;
+    border-radius: 4px;
+    line-height: 1.5;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+  
+
+    .feedback-txt{
+        padding: 16px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .feedback-username{
+        margin-bottom: 8px;
+    }
+
+    .feedback-date{
+        padding-top: 3rem;
+        margin-top: auto;
+        color: #707070;
+    }
+}

@@ -1,0 +1,26 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+@import './base/reset';
+@import './helpers/variables';
+
+// layout
+@import './layout/grid';
+
+
+@import './helpers/utilities';
+
+// components
+@import './components/buttons';
+@import './components/form';
+
+@import './base/typography';
+
+@import './layout/navbar';
+@import './layout/footer';
+
+// page
+@import './pages/home';
+@import './pages/faq';
+@import './pages/blog';
+@import './pages/locations';
+@import './pages/product';

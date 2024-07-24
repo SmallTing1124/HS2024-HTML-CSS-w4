@@ -1,0 +1,43 @@
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    text-decoration: none;
+    border-width: 1px;
+    border-style: solid;
+    text-align: center;
+}
+
+.btn-lg {
+    padding: 16px 32px;
+}
+
+.btn-primary {
+    background-color: $color-primary;
+    border-color: $color-primary;
+    color: #fff;
+
+    transition: all 0.5s;
+
+    &:hover {
+        background-color: darken($color-primary, 10%);
+        border-color: darken($color-primary, 10%);
+        transition: all 0.5s;
+        cursor: pointer;
+    }
+}
+
+
+.btn-dark {
+    background-color: $color-dark;
+    border-color: $color-dark;
+    color: #fff;
+    transition: all 0.5s;
+
+    &:hover {
+        background-color: lighten($color-dark, 50%);
+        border-color: lighten($color-dark, 50%);
+        transition: all 0.5s;
+        cursor: pointer;
+    }
+
+}

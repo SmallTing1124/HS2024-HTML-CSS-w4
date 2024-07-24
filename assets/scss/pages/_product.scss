@@ -1,0 +1,150 @@
+.product-type__nav {
+    @media (max-width:991px) {
+        margin-left: -12px;
+        margin-right: -12px;
+    }
+}
+
+.product-type__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-type_item {
+    width: 100%;
+    border: 1px solid #DCDCDC;
+    transition: all 0.5s;
+    position: relative;
+
+    &.active::after,
+    &:hover::after {
+        height: 8px;
+        transition: all 0.5s;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 0;
+        width: 100%;
+        background-color: $color-primary;
+    }
+}
+
+.product-type_link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    
+    color: $color-dark;
+
+    @media (min-width:576px) {
+        font-size: 32px;
+    }
+}
+
+
+// ad-area
+
+.ad-area {
+    display: flex;
+
+    .ad-image {
+        width: 100%;
+
+        .innerImg {
+            padding-top: 31%;
+
+            @media (max-width:991px) {
+                padding-top: 70%;
+
+            }
+        }
+    }
+}
+
+.product-type__name {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 32px;
+
+    @media (max-width:575px) {
+        font-size: 24px;
+    }
+
+    span {
+        font-size: 42px;
+        display: block;
+
+        @media (max-width:575px) {
+            font-size: 24px;
+        }
+    }
+}
+
+.product-list {
+    row-gap: 80px;
+    margin-bottom: 80px;
+
+    @media (max-width:991px) {
+
+        row-gap: 40px;
+    }
+
+    @media (max-width:575px) {
+        row-gap: 24px;
+    }
+}
+
+.product-item {
+
+
+    .product-link {
+        display: block;
+        color: $color-dark;
+    }
+
+    .product-image {
+        .innerImg {
+            padding-top: 55%;
+        }
+    }
+
+    .product-info {
+        font-size: 24px;
+        display: flex;
+        justify-content: space-between;
+
+        .product-info__price {
+            color: $color-primary;
+            font-weight: 500;
+        }
+    }
+
+    .product-colors {
+        display: flex;
+        gap: 8px;
+
+        .product-colors__item {
+            width: 24px;
+            height: 24px;
+            border-radius: 4px;
+            display: block;
+            background-color: red;
+        }
+
+        .color-1 {
+            background-color: #5F3E2D;
+        }
+
+        .color-2 {
+            background-color: #B75929;
+        }
+    }
+}

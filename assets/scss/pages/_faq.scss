@@ -1,0 +1,15 @@
+.faq-list {
+    .faq-item {
+        margin-bottom: 32px;
+
+        @media (max-width:575px) {
+            margin-bottom: 24px;
+        }
+    }
+
+    .faq-title {
+        font-size: 20px;
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+}
