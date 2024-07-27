@@ -73,14 +73,23 @@
 
 // .brand-product-area
 .brand-product-area {
-    background-image: url(../images/home/brand-product-bg.jpg);
+    background-image: url(../images/home/brand-product-bg-sm.png);
     background-size: cover;
     background-position: center;
 
+
+
     @media (min-width:768px) {
+        background-image: url(../images/home/brand-product-bg-md.png);
         padding-left: 24px;
         padding-right: 24px;
     }
+
+    @media (min-width:992px) {
+        background-image: url(../images/home/brand-product-bg.jpg);
+
+    }
+
 
     .brand-product__card {
         margin-bottom: 24px;
@@ -106,6 +115,12 @@
     }
 }
 
+.feedback-item {
+    @media (max-width:575px) {
+        margin-bottom: 16px;
+    }
+}
+
 .feedback-content {
     box-shadow: 0px 2px 6px #00000029;
     border: 1px solid #DEE2E6;
@@ -115,20 +130,18 @@
     display: flex;
     flex-direction: column;
 
-  
-
-    .feedback-txt{
+    .feedback-txt {
         padding: 16px;
         height: 100%;
         display: flex;
         flex-direction: column;
     }
 
-    .feedback-username{
+    .feedback-username {
         margin-bottom: 8px;
     }
 
-    .feedback-date{
+    .feedback-date {
         padding-top: 3rem;
         margin-top: auto;
         color: #707070;
